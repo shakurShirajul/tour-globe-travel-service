@@ -28,10 +28,16 @@
     padding: 15px 35px;
     border: none;
 }
-.responsive-navmenu{
+
+.responsive-navmenu {
     display: none;
 }
 
+.company-name {
+    font-size: 36px;
+    color: #131318;
+    font-weight: 800;
+}
 
 /* --- Header Section Styles */
 header {
@@ -52,9 +58,6 @@ nav {
     display: flex;
     align-items: center;
     gap: 2.2rem;
-    color: #131318;
-    font-size: 36px;
-    font-weight: 800;
 }
 
 .nav-menu {
@@ -106,25 +109,15 @@ nav {
     gap: 24px;
 }
 
+.banner-input select,
 .banner-input input {
-    border-radius: 8px;
     font-size: 1rem;
     font-weight: 400;
-    background: #FFF;
-    padding-left: 16px;
-    color: rgba(19, 19, 24, 0.5);
-    border: none;
-}
-
-.banner-input select {
     border-radius: 8px;
     background: #FFF;
     padding-left: 15px;
     color: rgba(19, 19, 24, 0.50);
-    font-size: 1rem;
-    font-weight: 400;
     border: none;
-    width: 175px;
 }
 
 /* --- Main Styles --- */
@@ -137,17 +130,7 @@ main {
 .popular-styles-container {
     display: flex;
     gap: 100px;
-    justify-content: space-between;
-    margin: 100px 0px 100px 0px;
-}
-
-.popular-columns {
-    flex: 1;
-}
-.img-columns{
-    background-image: url('../Images/Rectangle 4.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    margin: 100px 0;
 }
 
 .popular-title {
@@ -158,25 +141,8 @@ main {
     margin-bottom: 24px;
 }
 
-.popular-description {
-    color: rgba(19, 19, 24, 0.70);
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 24px;
-}
-
-.text-columns ul {
-    color: rgba(19, 19, 24, 0.70);
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 24px;
-    margin-left: 12px;
-}
-
-.text-columns li {
-    margin-bottom: 16px;
-}
-
+.popular-description,
+.text-columns ul,
 .popular-ending {
     color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
@@ -184,8 +150,22 @@ main {
     margin-bottom: 24px;
 }
 
+.text-columns ul {
+    margin-left: 12px;
+}
+
 .img-columns img {
-    width: 100%;
+    width: 540px;
+    height: 550px;
+
+}
+
+.text-columns li {
+    margin-bottom: 16px;
+}
+
+.perfect-text ul {
+    margin-left: 15px;
 }
 
 /* --- Choose Your Destination --- */
@@ -215,7 +195,6 @@ main {
     display: flex;
     gap: 24px;
     margin-bottom: 24px;
-    /* border: 1px solid red; */
 }
 
 .img-row .container {
@@ -246,14 +225,19 @@ main {
     margin: 100px auto;
 }
 
+.choose-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
 .choose-title {
     color: #131318;
     text-align: center;
-    font-family: Mulish;
     font-size: 40px;
-    font-style: normal;
     font-weight: 800;
-    line-height: normal;
     margin-bottom: 24px;
 }
 
@@ -261,30 +245,8 @@ main {
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 48px;
-    padding: 0 300px;
-}
-
-.choose-title {
-    color: #131318;
-    text-align: center;
-    font-family: Mulish;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-}
-
-.choose-description {
-    color: rgba(19, 19, 24, 0.70);
-    text-align: center;
-    font-family: Mulish;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
-    /* 162.5% */
 }
 
 
@@ -298,7 +260,7 @@ main {
 
 .reason-card-title {
     color: #131318;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 800;
     margin-top: 32px;
     margin-bottom: 16px;
@@ -306,12 +268,8 @@ main {
 
 .reason-card-desc {
     color: #5A5A5D;
-    font-family: Mulish;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 26px;
-    /* 162.5% */
 }
 
 .rs-1 {
@@ -329,9 +287,8 @@ main {
 
 .choosing-reason {
     display: grid;
-    grid-template-areas:
-        'first first second second'
-        '.     third third    .   ';
+    grid-template-areas: 'first first second second'
+                         '.     third third    .   ';
     gap: 25px;
 }
 
@@ -342,11 +299,8 @@ main {
 .text-title {
     color: #131318;
     text-align: center;
-    font-family: Mulish;
-    font-size: 40px;
-    font-style: normal;
+    font-size: 2.5rem;
     font-weight: 800;
-    line-height: normal;
     margin-bottom: 24px;
 }
 
@@ -355,7 +309,6 @@ main {
     text-align: center;
     font-size: 1rem;
     font-weight: 400;
-    padding: 0 300px;
     margin-bottom: 48px;
 }
 
@@ -372,6 +325,7 @@ main {
     background-size: 100% 100%;
     margin-bottom: 40px;
 }
+
 .deals-container {
     border-radius: 16px;
     border: 2px solid #FFF;
@@ -410,10 +364,11 @@ main {
     margin-bottom: 24px;
 }
 
-.deals-img-1{
+.deals-img-1 {
     padding: 56px 56px 56px 535px;
 }
-.deals-img-2{
+
+.deals-img-2 {
     padding: 56px 535px 56px 56px;
 }
 
@@ -425,7 +380,8 @@ main {
     font-weight: 400;
     line-height: normal;
 }
-.see-all-packages{
+
+.see-all-packages {
     display: flex;
     justify-content: center;
 }
@@ -440,37 +396,35 @@ main {
 
 .perfect-text-title {
     color: #131318;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 25px;
 }
 
 .perfect-text-descriptin {
     color: #5A5A5D;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     margin-bottom: 25px;
 }
 
 .perfect-text ul {
     color: #131318;
-    font-family: Mulish;
-    font-size: 16px;
-    font-style: normal;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 26px;
-    /* 162.5% */
     margin-bottom: 32px;
 }
-.perfect-img-container{
+
+.perfect-img-container {
     position: relative;
 }
-.perfect-img-container video{
-    
+
+.perfect-img-container video {
     border-radius: 16px;
-/* background: linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%); */
 }
-.perfect-img-title{
+
+.perfect-img-title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -482,18 +436,12 @@ main {
     text-align: center;
 }
 
-.container h1 {
-    
-}
 /* --- Customer Review Section --- */
 .review-title {
     color: #131318;
     text-align: center;
-    font-family: Mulish;
     font-size: 40px;
-    font-style: normal;
     font-weight: 800;
-    line-height: normal;
     margin: 50px 0;
 }
 
@@ -520,8 +468,6 @@ main {
     width: 150px;
     height: 150px;
     border: 5px solid #FF5400;
-    padding: 5px;
-    /* margin: 0 auto; */
 }
 
 
@@ -530,12 +476,14 @@ main {
 /* --- Newsletter Styles --- */
 .newsletter-container {
     display: flex;
-    padding: 40px;
+    /* padding: 40px; */
     gap: 25px;
     margin: 100px 0;
 }
 
 .newsletter-msg {
+    display: flex;
+    flex-direction: column;
     border-radius: 1rem;
     border: 1px solid #FF5400;
     padding: 40px;
@@ -559,14 +507,17 @@ main {
     font-weight: 400;
     margin-bottom: 24px;
 }
-.newsletter-img{
+
+.newsletter-img {
     position: relative;
     flex-grow: 1;
-    background-image: url('../Images/Rectangle\ 8 (1).png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
-.newsletter-img-text{
+
+.newsletter-img img {
+    width: 100%;
+}
+
+.newsletter-img-text {
     position: absolute;
     bottom: 50px;
     right: 16px;
@@ -577,27 +528,28 @@ main {
     transform: rotate(-19.628deg);
     border-radius: 16px;
 }
+
 .news-input {
     color: rgba(19, 19, 24, 0.30);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    padding: 16px 250px 16px 20px;
+    padding: 16px 0;
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
     border: none;
     margin-bottom: 20px;
-    max-width: 395px;
+    width: 100%;
 }
 
 .subscribe {
     border-radius: 8px;
     background: #FF5400;
-    padding: 14px 195px;
+    padding: 14px 0;
     color: #FFF;
     font-size: 20px;
     font-weight: 800;
-    /* max-width: 395px; */
     border: none;
+    width: 100%;
 }
 
 /* --- Footer Section Styles --- */
@@ -642,4 +594,130 @@ main {
 .footer-line {
     background: rgba(19, 19, 24, 0.10);
     margin: 50px 0;
+}
+
+/* --- Responsiveness for mobile device --- */
+@media screen and (max-width: 576px) {
+
+    header,
+    main {
+        padding: 0 20px 0px 20px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .responsive-navmenu {
+        display: block;
+    }
+
+    .banner-content {
+        padding: 30px 24px;
+    }
+
+    .banner-input input {
+        padding: 15px 0;
+        padding-left: 10px;
+    }
+
+    select {
+        padding: 15px;
+    }
+
+    .img-columns img {
+        width: 100%;
+    }
+
+    .img-row,
+    .banner-input,
+    .perfect-place-container,
+    .newsletter-container,
+    .popular-styles-container {
+        flex-direction: column;
+    }
+
+    .choosing-reason {
+        grid-template-areas: 'first' 'second' 'third';
+    }
+
+    .deals-img-1,
+    .deals-img-2 {
+        padding: 187px 16px 16px 16px;
+    }
+
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        padding: 100px 0;
+    }
+    .footer-line{
+        margin: 50px 20px
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 960px) {
+
+    header,
+    main {
+        padding: 0 20px 0px 20px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .responsive-navmenu {
+        display: block;
+    }
+
+    .banner-content {
+        padding: 30px 24px;
+    }
+
+    .banner-input input {
+        padding: 15px 0;
+        padding-left: 10px;
+    }
+
+    select {
+        padding: 15px;
+    }
+
+    .img-columns img {
+        width: 100%;
+    }
+
+    .img-row,
+    .banner-input,
+    .perfect-place-container,
+    .newsletter-container,
+    .popular-styles-container {
+        flex-direction: column;
+    }
+    .newsletter-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .choosing-reason {
+        grid-template-areas: 'first' 'second' 'third';
+    }
+
+    .deals-img-1,
+    .deals-img-2 {
+        padding: 187px 16px 16px 16px;
+    }
+
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        padding: 100px 0;
+    }
+    .footer-line{
+        margin: 50px 20px
+    }
 }
