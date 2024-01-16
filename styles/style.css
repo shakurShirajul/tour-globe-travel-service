@@ -21,7 +21,7 @@
 
 .btn-primary {
     border-radius: 8px;
-    background: #FF5400;
+    background-color: #FF5400;
     color: #FFF;
     font-size: 1rem;
     font-weight: 700;
@@ -88,7 +88,6 @@ nav {
 }
 
 .banner-description {
-    /* max-width: 675px; */
     margin-bottom: 48px;
     text-align: center
 }
@@ -116,10 +115,7 @@ nav {
 .banner-input select {
     border-radius: 8px;
     background: #FFF;
-
-    /* padding: 0px 112px 0px 16px; */
     padding-left: 15px;
-    /* padding-right: 112px; */
     color: rgba(19, 19, 24, 0.50);
     font-size: 1rem;
     font-weight: 400;
@@ -130,6 +126,7 @@ nav {
 /* --- Main Styles --- */
 main {
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* --- Popular Tours Styles --- */
@@ -163,7 +160,6 @@ main {
     color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
     font-weight: 400;
-    line-height: 26px;
     margin-bottom: 24px;
     margin-left: 12px;
 }
@@ -236,8 +232,128 @@ main {
     font-weight: 800;
 }
 
+/* --- Why Choose Us Styles --- */
+.choose-us {
+    margin: 100px auto;
+}
+
+.choose-title {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.choose-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 48px;
+    /* 162.5% */
+}
+
+.choose-title {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.choose-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+
+
+.reason-card {
+    padding: 32px 55px 32px 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.reason-card-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.reason-card-desc {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.rs-1 {
+    grid-area: first;
+}
+
+.rs-2 {
+    grid-area: second;
+}
+
+.rs-3 {
+    grid-area: third;
+}
+
+
+.choosing-reason {
+    display: grid;
+    grid-template-areas:
+        'first first second second'
+        '.     third third    .   ';
+    gap: 25px;
+}
+
+
+/* ---------------------------- */
 
 /* Deals and discount */
+.text-title {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.text-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
 
 .deals-img-1 {
     background-image: url('../Images/Group\ 39.png');
@@ -300,7 +416,8 @@ main {
     margin-bottom: 16px;
 }
 
-.deals-img-price {color: #FF5400;
+.deals-img-price {
+    color: #FF5400;
     font-family: Mulish;
     font-size: 20px;
     font-style: normal;
@@ -309,9 +426,8 @@ main {
     margin-bottom: 24px;
 }
 
-.deals-img-container button{
+.deals-img-container button {}
 
-}
 .deals-img-1 {
     padding: 56px 56px 56px 535px;
 }
@@ -323,4 +439,194 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/* A Simple Perfect Place To Get Lost */
+.perfect-place-container {
+    display: flex;
+    gap: 30px;
+    margin: 100px 0;
+}
+
+.perfect-text-title {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.perfect-text-descriptin {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.perfect-text ul {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    /* 162.5% */
+    margin-bottom: 32px;
+}
+
+/* --- Customer Review Section --- */
+.review-title {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 50px 0;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px
+}
+
+.reviews {
+    border-radius: 15px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.customer-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #FF5400;
+    padding: 5px;
+    /* margin: 0 auto; */
+}
+
+
+/* --------------------------------- */
+
+/* --- Newsletter Styles --- */
+.newsletter-container {
+    display: flex;
+    padding: 40px;
+    gap: 25px;
+}
+
+.newslatter-msg {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.newsletter-msg-line {
+    background: rgba(19, 19, 24, 0.10);
+    margin-bottom: 24px;
+}
+
+.newsletter-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+.newsletter-description {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 24px;
+    /* 162.5% */
+}
+
+/* .newsletter-input{
+    display: block;
+} */
+
+.news-input {
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px 250px 16px 20px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    margin-bottom: 20px;
+    max-width: 395px;
+}
+
+input[type="submit"] {
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 14px 150px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    max-width: 395px;
+    border: none;
+}
+
+/* --- Footer Section Styles --- */
+.footer-container {
+    padding: 110px 285px;
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-description {
+    margin-bottom: 32px;
+}
+
+.footer-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap: 15px;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.footer-container ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-container li {
+    color: white;
+}
+
+.footer-line {
+    background: rgba(19, 19, 24, 0.10);
+    margin: 50px 0;
 }
