@@ -119,7 +119,9 @@ nav {
     color: rgba(19, 19, 24, 0.50);
     border: none;
 }
-
+.ban-inp{
+    flex: 1;
+}
 /* --- Main Styles --- */
 main {
     max-width: 1440px;
